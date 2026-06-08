@@ -1,0 +1,10 @@
+id: DET-001
+title: Multiple Failed Login Attempts
+severity: medium
+mitre_attack: T1110
+recommended_playbook: account_bruteforce_triage
+conditions:
+  event_type: authentication
+  outcome: failure
+threshold: 3
+group_by: username

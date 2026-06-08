@@ -1,0 +1,9 @@
+id: DET-002
+title: Suspicious PowerShell Execution
+severity: high
+mitre_attack: T1059.001
+recommended_playbook: endpoint_script_execution_triage
+conditions:
+  event_type: process
+  process_name: powershell.exe
+  suspicious_flag: true

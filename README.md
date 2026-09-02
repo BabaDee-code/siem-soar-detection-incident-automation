@@ -31,8 +31,10 @@ python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\\Scripts\\activate
 pip install -r requirements-dev.txt
 pytest -q
-python -m detection_lab.run data/sample_events.jsonl rules
+PYTHONPATH=src python -m detection_lab.run data/sample_events.jsonl rules
 ```
+
+On Windows PowerShell, use `$env:PYTHONPATH = "src"` before the final command.
 
 ## Example alert
 

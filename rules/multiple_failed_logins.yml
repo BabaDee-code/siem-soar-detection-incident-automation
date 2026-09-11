@@ -8,3 +8,4 @@ conditions:
   outcome: failure
 threshold: 3
 group_by: username
+window_minutes: 5
